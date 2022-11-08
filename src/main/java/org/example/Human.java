@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Objects;
+
 public class Human {
     private  String name;
     private String surname;
@@ -51,6 +53,19 @@ public class Human {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Human human = (Human) o;
+        return getAge() == human.getAge() && getName().equals(human.getName()) && getSurname().equals(human.getSurname()) && getGender().equals(human.getGender());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getSurname(), getAge(), getGender());
     }
 
     @Override
