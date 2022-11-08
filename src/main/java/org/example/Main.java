@@ -13,14 +13,14 @@ public class Main {
         student.setGroupName("GIIF10-1");
 
         Student student2 = new Student();
-        student2.setAge(18);
+        student2.setAge(19);
         student2.setGender("man");
         student2.setName("Yriy");
         student2.setSurname("Zolotareva");
         student2.setGroupName("GIIF10-1");
 
         Student student3 = new Student();
-        student3.setAge(18);
+        student3.setAge(20);
         student3.setGender("man");
         student3.setName("Sergey");
         student3.setSurname("Tsivka");
@@ -28,14 +28,14 @@ public class Main {
         Group group = new Group();
 
         Student student4 = new Student();
-        student4.setAge(18);
+        student4.setAge(19);
         student4.setGender("woman");
         student4.setName("Galina");
         student4.setSurname("Tsivka");
         student4.setGroupName("GIIF10-1");
 
         Student student5 = new Student();
-        student5.setAge(18);
+        student5.setAge(20);
         student5.setGender("woman");
         student5.setName("Luba");
         student5.setSurname("Ostapenko");
@@ -85,7 +85,16 @@ public class Main {
          group.showStudentsInGroup();
         System.out.println(group.deleteStudent(student10));
         System.out.println(group.deleteStudent(student8));
-        Arrays.sort(group,new SortBySurname());
-
+        Arrays.sort(group.getStudents(), new SortBySurname());
+        group.showStudentsInGroup();
+        Arrays.sort(group.getStudents(), new SortByAge());
+        System.out.println();
+        group.showStudentsInGroup();
+        System.out.println();
+        System.out.println();
+        System.out.println(group.toString());
+        System.out.println();
+        System.out.println();
+        System.out.println(group.searchBySurname("Zolotareva"));
     }
 }
