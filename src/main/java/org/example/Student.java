@@ -6,11 +6,12 @@ public class Student extends Human  {
     private String groupName;
 
     public String getGroupName() {
+
         return groupName;
     }
 
     public void setGroupName(String groupName) {
-        if(groupName.isEmpty()!=true && groupName!=null) {
+        if(groupName!=null && groupName.isEmpty()!=true) {
             this.groupName = groupName;
         }
         else {
@@ -29,11 +30,13 @@ public class Student extends Human  {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(getGroupName());
     }
 
     @Override
     public String toString() {
+
         return super.toString() +", groupName='" + groupName + '\'';
     }
 }

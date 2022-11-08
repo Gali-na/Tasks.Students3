@@ -16,7 +16,8 @@ public class Human {
     }
 
     public void setName(String name){
-        if(name.isEmpty()!=true && name!=null) {
+        if(name!=null && name.isEmpty()!=true) {
+
             this.name = name;
         } else {
             System.out.println("Data sent incorrectly try again");
@@ -28,7 +29,7 @@ public class Human {
     }
 
     public void setSurname(String surname) {
-        if(surname.isEmpty()!= true && surname!= null) {
+        if(surname!= null && surname.isEmpty()!= true ) {
             this.surname = surname;
         } else {
             System.out.println("Data sent incorrectly try again");
@@ -40,7 +41,7 @@ public class Human {
     }
 
     public void setAge(int age) {
-        if(age>=1 && age<=120 ) {
+        if( age<=120 && age>=15) {
         this.age = age;
         } else {
             System.out.println("Data sent incorrectly try again");
