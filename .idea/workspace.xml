@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61eae761-47dd-4851-b8f6-638a4952db11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/HumanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/SortBySurnameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/GroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SortByAgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SortByAgeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,18 +35,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -57,8 +55,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SortBySurnameTest.compare_ArgumentFirstIsEqualsSecond_Result0">
-    <configuration name="SortBySurnameTest.compare_ArgumentFirstIsEqualsSecond_Result0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GroupTest.searchBySurname_PassSurnameIsEmpty_Message">
+    <configuration name="GroupTest.getStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tasks.students3" />
       <extension name="coverage">
         <pattern>
@@ -67,14 +65,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SortBySurnameTest" />
-      <option name="METHOD_NAME" value="compare_ArgumentFirstIsEqualsSecond_Result0" />
+      <option name="MAIN_CLASS_NAME" value="org.example.GroupTest" />
+      <option name="METHOD_NAME" value="getStudents" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortBySurnameTest.compare_ArgumentFirstMoreSecond_ResultIsNegativeNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupTest.getStudents_PassExistingSurnameInGroup_GetSrudentArry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tasks.students3" />
       <extension name="coverage">
         <pattern>
@@ -83,14 +81,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SortBySurnameTest" />
-      <option name="METHOD_NAME" value="compare_ArgumentFirstMoreSecond_ResultIsNegativeNumber" />
+      <option name="MAIN_CLASS_NAME" value="org.example.GroupTest" />
+      <option name="METHOD_NAME" value="getStudents_PassExistingSurnameInGroup_GetSrudentArry" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest.getGroupName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupTest.searchBySurnamePassIsNotExistingSurnameInGroup_Message" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tasks.students3" />
       <extension name="coverage">
         <pattern>
@@ -99,14 +97,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StudentTest" />
-      <option name="METHOD_NAME" value="getGroupName" />
+      <option name="MAIN_CLASS_NAME" value="org.example.GroupTest" />
+      <option name="METHOD_NAME" value="searchBySurnamePassIsNotExistingSurnameInGroup_Message" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest.setGroupName_ArgumentIsEmpty_SetUpArgument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupTest.searchBySurname_PassSurnameIsEmpty_Message" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tasks.students3" />
       <extension name="coverage">
         <pattern>
@@ -115,14 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StudentTest" />
-      <option name="METHOD_NAME" value="setGroupName_ArgumentIsEmpty_SetUpArgument" />
+      <option name="MAIN_CLASS_NAME" value="org.example.GroupTest" />
+      <option name="METHOD_NAME" value="searchBySurname_PassSurnameIsEmpty_Message" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest.setGroupName_ArgumentIsNull_SetUpArgument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupTest.searchBySurname_PassSurnameIsNull_Message" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tasks.students3" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +129,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StudentTest" />
-      <option name="METHOD_NAME" value="setGroupName_ArgumentIsNull_SetUpArgument" />
+      <option name="MAIN_CLASS_NAME" value="org.example.GroupTest" />
+      <option name="METHOD_NAME" value="searchBySurname_PassSurnameIsNull_Message" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SortBySurnameTest.compare_ArgumentFirstIsEqualsSecond_Result0" />
-        <item itemvalue="JUnit.SortBySurnameTest.compare_ArgumentFirstMoreSecond_ResultIsNegativeNumber" />
-        <item itemvalue="JUnit.StudentTest.setGroupName_ArgumentIsEmpty_SetUpArgument" />
-        <item itemvalue="JUnit.StudentTest.setGroupName_ArgumentIsNull_SetUpArgument" />
-        <item itemvalue="JUnit.StudentTest.getGroupName" />
+        <item itemvalue="JUnit.GroupTest.searchBySurname_PassSurnameIsEmpty_Message" />
+        <item itemvalue="JUnit.GroupTest.searchBySurname_PassSurnameIsNull_Message" />
+        <item itemvalue="JUnit.GroupTest.searchBySurnamePassIsNotExistingSurnameInGroup_Message" />
+        <item itemvalue="JUnit.GroupTest.getStudents" />
+        <item itemvalue="JUnit.GroupTest.getStudents_PassExistingSurnameInGroup_GetSrudentArry" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +173,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Group.java</url>
-          <line>61</line>
+          <line>60</line>
           <properties class="org.example.Group" method="searchBySurname">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -200,10 +198,71 @@
           </properties>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>30</line>
+          <properties class="org.example.GroupTest" method="addStudent_PassingOneArgumentIfGroupIsEmpty_AddArgument">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>123</line>
+          <properties class="org.example.GroupTest" method="deleteStudent_DeletingStudentIfStudentHasSurnameIsNull_GetMessag">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>208</line>
+          <properties class="org.example.GroupTest" method="getStudents">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>201</line>
+          <properties class="org.example.GroupTest" method="searchBySurname_PassSurnameIsEmpty_Message">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/HumanTest.java</url>
           <line>37</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

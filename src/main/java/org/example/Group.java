@@ -15,7 +15,8 @@ public class Group {
                 && student.getName() != null
                 && student.getGender() != null
                 && student.getSurname() != null
-                && student.getGroupName() != null) {
+                && student.getGroupName() != null
+                && student.getAge() != 0) {
             for (int i = 0; i < students.length; i++) {
                 if (this.students[i] == null && i <= 9) {
                     students[i] = student;
@@ -24,9 +25,7 @@ public class Group {
                 }
             }
         } else {
-            rezult = "The student's identity does not contain all the " +
-                    "required information, the student was not " +
-                    "added to the group";
+            rezult = "The student's identity does not contain all the required information, the student was not added to the group";
         }
 
         return rezult;
@@ -41,7 +40,7 @@ public class Group {
     }
 
     public String deleteStudent(Student student) {
-        String rezult = "This group does not contain the specified student";
+        String rezult = "This group does ont contain the specified student";
         if (student != null
                 && student.getName() != null
                 && student.getGender() != null
@@ -60,22 +59,27 @@ public class Group {
     }
 
     public String searchBySurname(String surname) {
-        Student [] rezultCurrent = new Student[10];
-        Student [] rezult = new Student[1];
-        int j=0;
-        if (surname != null && surname.isEmpty()!=true) {
+        Student[] rezultCurrent = new Student[10];
+        Student[] rezultArray = new Student[1];
+        String rezult = "";
+        int j = 0;
+        if (surname != null && surname.isEmpty() != true) {
             for (int i = 0; i < this.students.length; i++) {
-                  if(this.students[i]!=null &&  this.students[i].getSurname().equals(surname)) {
-                      rezultCurrent[j]=students[i];
-                      j++;
-                  }
+                if (this.students[i] != null && this.students[i].getSurname().equals(surname)) {
+                    rezultCurrent[j] = students[i];
+                    j++;
+                }
             }
 
-          rezult =   Arrays.copyOfRange(rezultCurrent, 0, rezultCurrent.length);
+            rezultArray = Arrays.copyOfRange(rezultCurrent, 0, j);
+            rezult = Arrays.toString(rezultArray);
+            if (rezultArray.length == 0) {
+                rezult = "Data transferred incorrectly";
+            }
         } else {
-            System.out.println("Data transferred incorrectly");
+            rezult = "Data transferred incorrectly";
         }
-        return Arrays.toString(rezult);
+        return rezult;
     }
 
     public Student[] getStudents() {
