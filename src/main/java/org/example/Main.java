@@ -69,20 +69,19 @@ public class Main {
         student10.setSurname("Snina");
         student10.setGroupName("GIIF10-1");
         Student student8 = new Student();
-
-        System.out.println( group.addStudent(student));
-        System.out.println( group.addStudent(student2));
-        System.out.println( group.addStudent(student3));
-        System.out.println( group.addStudent(student4));
+        System.out.println(group.addStudent(student));
+        System.out.println(group.addStudent(student2));
+        System.out.println(group.addStudent(student3));
+        System.out.println(group.addStudent(student4));
         System.out.println(group.addStudent(student5));
         System.out.println(group.addStudent(student6));
         System.out.println(group.addStudent(student7));
-        System.out.println( group.addStudent(student9));
-         System.out.println(group.addStudent(student10));
-        System.out.println( group.addStudent(student8));
-       /* System.out.println(group.addStudent(student));
+        System.out.println(group.addStudent(student9));
+        System.out.println(group.addStudent(student10));
+        System.out.println(group.addStudent(student8));
+            /* System.out.println(group.addStudent(student));
         System.out.println(group.addStudent(student2));*/
-         group.showStudentsInGroup();
+        group.showStudentsInGroup();
         System.out.println(group.deleteStudent(student10));
         System.out.println(group.deleteStudent(student8));
         Arrays.sort(group.getStudents(), new SortBySurname());

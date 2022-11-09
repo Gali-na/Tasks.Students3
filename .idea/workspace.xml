@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61eae761-47dd-4851-b8f6-638a4952db11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/GroupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AddException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SortByAgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SortByAgeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/GroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/GroupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +56,23 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GroupTest.searchBySurname_PassSurnameIsEmpty_Message">
+  <component name="RunManager" selected="JUnit.GroupTest.addStudent_PassingOneArgumentIfGroupFull_GetMassage">
+    <configuration name="GroupTest.addStudent_PassingOneArgumentIfGroupFull_GetMassage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tasks.students3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.GroupTest" />
+      <option name="METHOD_NAME" value="addStudent_PassingOneArgumentIfGroupFull_GetMassage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupTest.getStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tasks.students3" />
       <extension name="coverage">
@@ -67,22 +84,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.GroupTest" />
       <option name="METHOD_NAME" value="getStudents" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupTest.getStudents_PassExistingSurnameInGroup_GetSrudentArry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tasks.students3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.GroupTest" />
-      <option name="METHOD_NAME" value="getStudents_PassExistingSurnameInGroup_GetSrudentArry" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GroupTest.addStudent_PassingOneArgumentIfGroupFull_GetMassage" />
         <item itemvalue="JUnit.GroupTest.searchBySurname_PassSurnameIsEmpty_Message" />
         <item itemvalue="JUnit.GroupTest.searchBySurname_PassSurnameIsNull_Message" />
         <item itemvalue="JUnit.GroupTest.searchBySurnamePassIsNotExistingSurnameInGroup_Message" />
         <item itemvalue="JUnit.GroupTest.getStudents" />
-        <item itemvalue="JUnit.GroupTest.getStudents_PassExistingSurnameInGroup_GetSrudentArry" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +174,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Group.java</url>
-          <line>60</line>
+          <line>68</line>
           <properties class="org.example.Group" method="searchBySurname">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -200,7 +201,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>30</line>
+          <line>31</line>
           <properties class="org.example.GroupTest" method="addStudent_PassingOneArgumentIfGroupIsEmpty_AddArgument">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -209,7 +210,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>123</line>
+          <line>132</line>
           <properties class="org.example.GroupTest" method="deleteStudent_DeletingStudentIfStudentHasSurnameIsNull_GetMessag">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -218,7 +219,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>208</line>
+          <line>218</line>
           <properties class="org.example.GroupTest" method="getStudents">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -227,7 +228,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>201</line>
+          <line>210</line>
           <properties class="org.example.GroupTest" method="searchBySurname_PassSurnameIsEmpty_Message">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -241,27 +242,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>46</line>
+          <line>48</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>70</line>
+          <line>72</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>91</line>
+          <line>100</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>163</line>
+          <line>172</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/GroupTest.java</url>
-          <line>202</line>
+          <line>211</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>

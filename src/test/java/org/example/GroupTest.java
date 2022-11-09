@@ -11,9 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GroupTest {
     Group groupTest;
+
     @BeforeEach
-            void creatingGroupObject () {
-       groupTest = new Group();
+    void creatingGroupObject() {
+        groupTest = new Group();
     }
 
 
@@ -40,14 +41,15 @@ class GroupTest {
     void addStudent_PassingOneArgumentIsNullIfGroupIsEmpty_GetMAssage() {
         String result = "The student's identity does not contain all the required information, the student was not added to the group";
         Student student = null;
-        assertEquals(result,groupTest.addStudent(student) );
+        assertEquals(result, groupTest.addStudent(student));
     }
+
     @Test
     void addStudent_PassingOneArgumentWithNameNullIfGroupIsEmpty_GetMassage() {
         String result = "The student's identity does not contain all the required information, the student was not added to the group";
         Student student = new Student();
         student.setName(null);
-        assertEquals(result,groupTest.addStudent(student) );
+        assertEquals(result, groupTest.addStudent(student));
     }
 
     @Test
@@ -55,7 +57,7 @@ class GroupTest {
         String result = "The student's identity does not contain all the required information, the student was not added to the group";
         Student student = new Student();
         student.setSurname(null);
-        assertEquals(result,groupTest.addStudent(student) );
+        assertEquals(result, groupTest.addStudent(student));
     }
 
     @Test
@@ -63,7 +65,7 @@ class GroupTest {
         String result = "The student's identity does not contain all the required information, the student was not added to the group";
         Student student = new Student();
         student.setGender(null);
-        assertEquals(result,groupTest.addStudent(student) );
+        assertEquals(result, groupTest.addStudent(student));
     }
 
     @Test
@@ -71,7 +73,7 @@ class GroupTest {
         String result = "The student's identity does not contain all the required information, the student was not added to the group";
         Student student = new Student();
         student.setGroupName(null);
-        assertEquals(result,groupTest.addStudent(student) );
+        assertEquals(result, groupTest.addStudent(student));
     }
 
     @Test
@@ -79,19 +81,24 @@ class GroupTest {
         String result = "The student's identity does not contain all the required information, the student was not added to the group";
         Student student = new Student();
         student.setAge(0);
-        assertEquals(result,groupTest.addStudent(student) );
+        assertEquals(result, groupTest.addStudent(student));
     }
 
-    @Test
+    @Test()
     void addStudent_PassingOneArgumentIfGroupFull_GetMassage() {
-
+        String expected = "The group is full adding a student is not possible";
+        for (int i = 0; i <= 9; i++) {
+            groupTest.addStudent(getStudentFilledInArguments());
+        }
+        String rezult = groupTest.addStudent(getStudentFilledInArguments());
+        assertEquals(expected, rezult);
     }
 
     @Test
     void deleteStudent_DeletingStudentIfStudentWasInGroup_GetMessage() {
-        String rezult ="Student removed from group";
-       groupTest.addStudent(getStudentFilledInArguments());
-       assertEquals(rezult,groupTest.deleteStudent(getStudentFilledInArguments()));
+        String rezult = "Student removed from group";
+        groupTest.addStudent(getStudentFilledInArguments());
+        assertEquals(rezult, groupTest.deleteStudent(getStudentFilledInArguments()));
     }
 
     @Test
@@ -104,7 +111,7 @@ class GroupTest {
         student.setName("Natalia");
         student.setSurname("Zolotareva");
         student.setGroupName("GIIF10-1");
-        assertEquals(rezult,groupTest.deleteStudent(student));
+        assertEquals(rezult, groupTest.deleteStudent(student));
     }
 
     @Test
@@ -117,7 +124,7 @@ class GroupTest {
         student.setName(null);
         student.setSurname("Zolotareva");
         student.setGroupName("GIIF10-1");
-        assertEquals(rezult,groupTest.deleteStudent(student));
+        assertEquals(rezult, groupTest.deleteStudent(student));
     }
 
     @Test
@@ -130,7 +137,7 @@ class GroupTest {
         student.setName("Natalia");
         student.setSurname(null);
         student.setGroupName("GIIF10-1");
-        assertEquals(rezult,groupTest.deleteStudent(student));
+        assertEquals(rezult, groupTest.deleteStudent(student));
     }
 
     @Test
@@ -143,7 +150,7 @@ class GroupTest {
         student.setName("Natalia");
         student.setSurname("Zolotareva");
         student.setGroupName("GIIF10-1");
-        assertEquals(rezult,groupTest.deleteStudent(student));
+        assertEquals(rezult, groupTest.deleteStudent(student));
     }
 
     @Test
@@ -156,7 +163,7 @@ class GroupTest {
         student.setName("Natalia");
         student.setSurname("Zolotareva");
         student.setGroupName(null);
-        assertEquals(rezult,groupTest.deleteStudent(student));
+        assertEquals(rezult, groupTest.deleteStudent(student));
     }
 
     @Test
@@ -169,47 +176,48 @@ class GroupTest {
         student.setName("Natalia");
         student.setSurname("Zolotareva");
         student.setGroupName("GGGG-12");
-        assertEquals(rezult,groupTest.deleteStudent(student));
+        assertEquals(rezult, groupTest.deleteStudent(student));
     }
 
     @Test
     void searchBySurnamePassExistingSurnameInGroup_GetStudentsArray() {
-        Student [] student = new Student[2];
-        student[0]=getStudentFilledInArguments();
-        student[1]=getStudentFilledInArguments();
+        Student[] student = new Student[2];
+        student[0] = getStudentFilledInArguments();
+        student[1] = getStudentFilledInArguments();
         groupTest.addStudent(getStudentFilledInArguments());
         groupTest.addStudent(getStudentFilledInArguments());
-        assertEquals(Arrays.toString(student),groupTest.searchBySurname("Zolotareva"));
+        assertEquals(Arrays.toString(student), groupTest.searchBySurname("Zolotareva"));
     }
 
     @Test
     void searchBySurname_PassIsNotExistingSurnameInGroup_Message() {
-        String rezult= "Data transferred incorrectly";
+        String rezult = "Data transferred incorrectly";
         groupTest.addStudent(getStudentFilledInArguments());
         groupTest.addStudent(getStudentFilledInArguments());
-        assertEquals(rezult,groupTest.searchBySurname("Zolotarevan"));
+        assertEquals(rezult, groupTest.searchBySurname("Zolotarevan"));
     }
 
     @Test
     void searchBySurname_PassSurnameIsNull_Message() {
-        String rezult= "Data transferred incorrectly";
+        String rezult = "Data transferred incorrectly";
         groupTest.addStudent(getStudentFilledInArguments());
         groupTest.addStudent(getStudentFilledInArguments());
-        assertEquals(rezult,groupTest.searchBySurname(null));
+        assertEquals(rezult, groupTest.searchBySurname(null));
     }
 
     @Test
     void searchBySurname_PassSurnameIsEmpty_Message() {
-        String rezult= "Data transferred incorrectly";
+        String rezult = "Data transferred incorrectly";
         groupTest.addStudent(getStudentFilledInArguments());
         groupTest.addStudent(getStudentFilledInArguments());
-        assertEquals(rezult,groupTest.searchBySurname(""));
+        assertEquals(rezult, groupTest.searchBySurname(""));
     }
+
     @Test
-    void getStudents () {
+    void getStudents() {
         groupTest.addStudent(getStudentFilledInArguments());
-        Student [] students = new Student[10];
-        students[0]=getStudentFilledInArguments();
-        assertArrayEquals(students,groupTest.getStudents());
+        Student[] students = new Student[10];
+        students[0] = getStudentFilledInArguments();
+        assertArrayEquals(students, groupTest.getStudents());
     }
 }

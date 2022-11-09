@@ -9,8 +9,8 @@ public class Group {
         this.students = new Student[10];
     }
 
-    public String addStudent(Student student) {
-        String rezult = "The group is full, it is imposlesib to add a student";
+    public String addStudent(Student student){
+        String rezult = "";
         if (student != null
                 && student.getName() != null
                 && student.getGender() != null
@@ -18,6 +18,14 @@ public class Group {
                 && student.getGroupName() != null
                 && student.getAge() != 0) {
             for (int i = 0; i < students.length; i++) {
+                try {
+                    if (students[i] != null && i == 9) {
+                        throw new AddException();
+                    }
+                } catch (AddException e) {
+                    rezult =e.getMessage();
+                }
+
                 if (this.students[i] == null && i <= 9) {
                     students[i] = student;
                     rezult = "Student added to group";
